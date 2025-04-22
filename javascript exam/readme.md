@@ -17,7 +17,7 @@ A sleek, responsive web application that displays real-time COVID-19 statistics 
 - **Design**: Modern glassmorphism effects using CSS
 
 ## 🚀 Live Demo
-https://celadon-meringue-aefe2a.netlify.app/
+https://heroic-bienenstitch-926b78.netlify.app/
 ## video
 
 https://github.com/user-attachments/assets/d7be596b-87a8-4b9f-832c-b621634f8b4a
