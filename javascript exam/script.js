@@ -1,6 +1,6 @@
 const tableBody = document.querySelector("#covidTable tbody");
-const searchInput = document.getElementById("#searchInput");
-const searchBtn = document.getElementById("#searchBtn");
+const searchInput = document.getElementById("searchInput"); 
+const searchBtn = document.getElementById("searchBtn");
 
 let stateData = [];
 
@@ -10,20 +10,23 @@ fetch("https://api.rootnet.in/covid19-in/stats/latest")
     stateData = data.data.regional;
     displayData(stateData);
   })
- 
+  .catch(error => {
+    console.error("Failed to fetch data:", error);
+    tableBody.innerHTML = "<tr><td colspan='7'>Failed to load data</td></tr>";
+  });
 
 function displayData(dataArray) {
   tableBody.innerHTML = "";
   dataArray.forEach((state, index) => {
     const row = document.createElement("tr");
     row.innerHTML = 
-       "<td>" + (index + 1) + "</td>" +
-       "<td>" + state.loc + "</td>" +
-       "<td>" + state.confirmedCasesIndian + "</td>" +
-       "<td>" + state.confirmedCasesForeign + "</td>" +
-       "<td>" + state.discharged + "</td>" +
-       "<td>" + state.deaths + "</td>" +
-       "<td>" + state.totalConfirmed + "</td>";
+      "<td>" + (index + 1) + "</td>" +
+      "<td>" + state.loc + "</td>" +
+      "<td>" + state.confirmedCasesIndian + "</td>" +
+      "<td>" + state.confirmedCasesForeign + "</td>" +
+      "<td>" + state.discharged + "</td>" +
+      "<td>" + state.deaths + "</td>" +
+      "<td>" + state.totalConfirmed + "</td>";
     tableBody.appendChild(row);
   });
 }
@@ -39,3 +42,4 @@ searchBtn.addEventListener("click", () => {
     displayData(filtered);
   }
 });
+
