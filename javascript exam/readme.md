@@ -20,4 +20,4 @@ A sleek, responsive web application that displays real-time COVID-19 statistics 
 https://heroic-bienenstitch-926b78.netlify.app/
 ## video
 
-https://github.com/user-attachments/assets/d7be596b-87a8-4b9f-832c-b621634f8b4a
+https://github.com/user-attachments/assets/0f296d37-cc95-449f-b5ae-f33d81ff03bd
