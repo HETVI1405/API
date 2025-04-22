@@ -13,7 +13,7 @@ A sleek, responsive web application that displays real-time COVID-19 statistics 
 ## 🛠 Tech Stack
 
 - **Frontend**: HTML5, CSS3, JavaScript (ES6)
-- **API**: COVID-19 data fetched from [API source, e.g., https://api.covid19india.org or similar]
+- **API**: COVID-19 data fetched from [API source, e.g., https://api.rootnet.in/covid19-in/stats/latest]
 - **Design**: Modern glassmorphism effects using CSS
 
 ## 🚀 Live Demo
