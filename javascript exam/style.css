@@ -1,0 +1,102 @@
+
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 40px;
+    background-color: #d3b6e8e2;
+    min-height: 100vh;
+    color: #ffffff;
+  }
+  
+  h1 {
+    font-size: 30px;
+    font-family: "Poetsen One", sans-serif;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  }
+  
+  table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  th, td {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 16px;
+    color: #f1f1f1;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 18px;
+  }
+  
+  th {
+    background-color: rgba(114, 14, 144, 0.6);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  td {
+    font-family: "Playfair Display", serif;
+    letter-spacing: 1px;
+  }
+  
+  tr {
+    background-color: #bc96d7;
+  }
+  
+  tr:hover {
+    background-color: #a583bc;
+    cursor: pointer;
+  }
+  
+  input {
+    padding: 12px 22px;
+    border-radius: 40px;
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+    margin-top: 20px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: background 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  input::placeholder {
+    color: #f7f1f1;
+  }
+  
+  #searchBtn {
+    border: 1px solid white;
+    background-color: #a583bc;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  #searchBtn:hover {
+    background-color: #8b6da5;
+    transform: scale(1.05);
+  }
+   
