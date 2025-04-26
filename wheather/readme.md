@@ -8,10 +8,9 @@ A simple weather application that shows real-time weather information based on y
 - Show 5-day forecast
 - Responsive design (works on mobile and desktop)
 
-## Installation
+## video
 
-1. Clone the repository
-```bash
-git clone https://github.com/yourusername/weather-app.git
-cd weather-app
-## Screenshot
+
+
+
+https://github.com/user-attachments/assets/a99f7268-c07d-4bdb-8e31-c3e49533b158
