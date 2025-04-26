@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <title>Weather App</title>
+  <style>
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+  }
+  .weather-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  #cityInput {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    outline: none;
+  }
+  #getWeather {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff9800;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  #getWeather:hover {
+    background-color: #fb8c00;
+  }
+  #weatherResult {
+    margin-top: 20px;
+    text-align: left;
+  }
+  #weatherResult h2 {
+    margin-bottom: 10px;
+  }
+  #weatherResult p {
+    margin: 5px 0;
+  }
+  .hidden {
+    display: none;
+  }
+</style>
+
+  </style>
+</head>
+<body>
+  <div class="weather-container">
+    <h1>🌤️ Weather App</h1>
+    <input type="text" id="cityInput" placeholder="Enter city name" />
+    <button id="getWeather">Get Weather</button>
+    <div id="weatherResult" class="hidden">
+      <h2 id="cityName"></h2>
+      <p><strong>Temperature:</strong> <span id="temp"></span>°C</p>
+      <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+      <p><strong>Wind Speed:</strong> <span id="wind"></span> m/s</p>
+      <p><strong>Weather:</strong> <span id="description"></span></p>
+    </div>
+  </div>
+  <script src="script.js">
+
+
+
+  </script>
+</body>
+</html>
