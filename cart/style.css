@@ -1,0 +1,259 @@
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color:white;
+    margin: 0;
+    padding: 0;
+    color: #2b2b2b;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  nav {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .cart-box {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 50%;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    padding: 15px;
+    display: none;
+    z-index: 100;
+  }
+  .cart-box h3 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+  .cart-box p {
+    font-size: 14px;
+    color: #555;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+.menu1, .menu2, .icons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu1 .list1,
+.menu2 .list2,
+.icons .list3 {
+    list-style: none;
+}
+
+.menu1 .list1 a,
+.menu2 .list2 a {
+    text-decoration: none;
+    color: #2b2b2b;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.menu1 .list1 a:hover,
+.menu2 .list2 a:hover {
+    color: #6c63ff;
+}
+
+#logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #6c63ff;
+    text-decoration: none;
+}
+
+.price{
+    position: relative;
+    left: 35%;
+}
+.user {
+    position: relative;
+}
+
+.drop {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    border: 1px solid #ccc;
+    width: 180px;
+    padding: 15px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 10;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.drop a {
+    text-decoration: none;
+    color: #444;
+    font-size: 14px;
+}
+
+.user:hover .drop {
+    display: flex;
+}
+
+
+.list3 .bi {
+    font-size: 22px;
+    color: #2b2b2b;
+    position: relative;
+    cursor: pointer;
+}
+
+.circle {
+    height: 15px;
+    width: 15px;
+    background-color: crimson;
+    border-radius: 50%;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart {
+    font-size: 10px;
+   
+    margin: 0;
+}
+
+
+.products {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    position: absolute;
+    top: 15%;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.product .box {
+    background-color:#fffefe;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 23%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.box img {
+    height: 150px;
+    width: 50%;
+    position: relative;
+    left: 51px;
+    top: 10px;
+   
+}
+
+.box h6 {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.btns {
+    display: block;
+    margin: 10px auto 20px;
+    padding: 8px 20px;
+    border: none;
+    background-color: #6c63ff;
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btns:hover {
+    background-color: #574fd6;
+}
+
+.search-container {
+    max-width: 400px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#searchInput {
+    flex-grow: 1;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+#searchInput:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.3);
+}
+
+.search-btn {
+    padding: 10px 15px;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #574fd6;
+}
+
+.search-btn i {
+    font-size: 18px;
+}
